@@ -52,7 +52,7 @@ function loadMyBooks(booksArray) {
 }
 
 
-function checkMyLuck() { //POSIBILIDAD DE QUE EL USUARIO OBTENGA UN DESCUENTO (QUE PUEDE SER 5%, 10%, 15%, y 20%)
+function checkMyLuck() { //Posibilidad de que el usuario obtenga un descuento RANDOM (que puede ser 5%, 10%, 15%, y 20%)
   alert('Hace click y participá por un DESCUENTO de hasta un 20%!');
   const discountArray = [0, 5, 10, 15, 20];
   return discountArray[Math.floor(Math.random() * discountArray.length)];
