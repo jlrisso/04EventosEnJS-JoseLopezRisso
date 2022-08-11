@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Complementario</title>
+    <script defer src="Book.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body class="">
+    <main class="container my-5">
+
+        <h1 id="titulo">Trabajando con el DOM</h1>
+        <hr>
+        <div class="intro mt-5">
+            <template>
+                <div class="card" style="width: 10rem;">
+                    <div class="product-card card-body">
+                        <h5 class="card-title">Título:</h5>
+                        <p class="card-text">Autor:</p>
+                        <p class="card-text">Precio:</p>
+                        <input class="form-control" type="number" placeholder="Cantidad">
+                        <a href="#" class="btn btn-secondary mt-4" data-button-remove>Remover</a>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="total bg-dark hidden">
+            <div class="col-lg-4 bg-grey">
+                <div class="main-box p-5">
+                    <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen de compra:</h3>
+                    <hr class="my-4">
+
+                    <div id="items" class="d-flex justify-content-between mb-4">
+                        <h5>Items</h5>
+                        <h5></h5>
+                    </div>
+                    <hr class="my-4">
+                    <div id="total-price" class="d-flex justify-content-between mb-5">
+                        <h5>Precio Total</h5>
+                        <h5></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

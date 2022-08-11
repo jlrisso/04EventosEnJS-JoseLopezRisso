@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+}
+
+.card {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.total{
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
