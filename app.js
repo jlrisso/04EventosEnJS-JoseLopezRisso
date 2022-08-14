@@ -107,7 +107,8 @@ function applyADiscount(objectArray, discountPercentage, idList = []) {
 
 
 function checkMyInputs(booksArray) {
-  [...document.querySelectorAll('.form-control')].forEach(element => {
+
+  document.querySelectorAll('.form-control').forEach(element => {
     element.addEventListener('change', (event) => {
       const input = Number(element.value); 
       if (isNaN(input) || input <= 0) element.value = 1; //Chequeo el valor del INPUT
@@ -132,7 +133,7 @@ function checkMyRemoveButtons(booksArray) {
 
 function updatePrice(array, total = 0, quantity =0) {
 
-  [...document.querySelectorAll('.form-control')].forEach(element => {
+  document.querySelectorAll('.form-control').forEach(element => {
     const inputNumber = Number(element.value);
     if(!inputNumber) return; //SKIP THE CURRENT ITERATION
     const myBook = array.find(book => book.id.toString() === element.dataset.btnId);
